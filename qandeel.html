@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مصياف قنديل | البرنامج الصيفي للأطفال</title>
+    <!-- استدعاء خط Cairo المعتمد -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <!-- مكتبة الأيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styleq.css">
+</head>
+<body>
+
+    <!-- الهيدر / شريط التنقل -->
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <a href="#hero"><img src="شفاف%20%20قنديل.png" alt="شعار مصياف قنديل" class="nav-logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">الرئيسية</a></li>
+                    <li><a href="#main-dashboard">لوحة التفاعل</a></li>
+                    <li><a href="#stats">قنديل في أرقام</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي (Hero Section) -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-content">
+            <h1>مرحبًا بكم في <span class="brand-name">مصياف قنديل</span></h1>
+            <p>برنامج......</p>
+            <a href="#main-dashboard" class="btn-primary">استعرض لوحة التفاعلات الحية</a>
+        </div>
+    </section>
+
+    <!-- لوحة التفاعل الرئيسية (المقسمة لعمودين يمين ويسار) -->
+    <section id="main-dashboard" class="dashboard-section">
+        <div class="container dashboard-grid">
+
+            <!-- العمود الأيمن: الحصالة ممتدة بالطول -->
+            <div class="right-column-box">
+                <div class="section-title-box">
+                    <h2><i class="fa-solid fa-piggy-bank"></i> حصالة مصياف قنديل</h2>
+                    <p>نجمع الدعم معاً من بداية المصياف وحتى نهايته لتجهيز الحفل الختامي !</p>
+                </div>
+                <!-- صورة الحصالة الكبيرة -->
+                <div class="money-box-img-container">
+                    <img src="حصالةقنديل.png" alt="حصالة قنديل الكبيرة" class="money-box-large-img">
+                </div>
+                <!-- عداد الحصالة أسفل الصورة -->
+                <div class="progress-container-box">
+                    <div class="progress-info">
+                        <span>المبلغ الحالي: <strong id="current-amount">100</strong> ر.س</span>
+                        <span>الهدف: <strong>6000</strong> ر.س</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="progress-fill" style="width: 0%;"></div>
+                    </div>
+                    <p class="motivation-text"><i class="fa-solid fa-lightbulb"></i> بدعمكم تضيء شعلة حفلنا الختامي!</p>
+                </div>
+            </div>
+
+            <!-- العمود الأيسر والأوسط: لوحة نجوم الفئات الـ 4 -->
+            <div class="left-column-stars">
+                <div class="section-title-box">
+                    <h2><i class="fa-solid fa-trophy"></i> نجوم الأسبوع المتميزين</h2>
+                    <p>لوحة شرف وتتويج أبطالنا في فئات مصياف قنديل الـ 4</p>
+                </div>
+
+                <div class="stars-categories-grid">
+                    <!-- فئة 1: البراعم -->
+                    <div class="winner-card card-baraem">
+                        <span class="category-tag">فئة البراعم</span>
+                        <div class="winner-avatar-box">
+                            <img src="winner2.jpg" alt="صورة الفائز" class="winner-img">
+                        </div>
+                        <div class="winner-details">
+                            <h3>البطل / أحمد بن بندر</h3>
+                            <p class="achievement-text">تمتّع بالتميز في حفظ الـ 5 سور الأولى من جزء عمّ.</p>
+                        </div>
+                    </div>
+
+                    <!-- فئة 2: النجوم -->
+                    <div class="winner-card card-stars">
+                        <span class="category-tag">فئة النجوم</span>
+                        <div class="winner-avatar-box">
+                            <img src="ali.jpg" alt="صورة الفائز" class="winner-img">
+                        </div>
+                        <div class="winner-details">
+                            <h3>البطل / علــي بن جمــل </h3>
+                            <p class="achievement-text">حفظ 15 حديثاً نبوياً قصيراً بطلاقة وإتقان تام.</p>
+                        </div>
+                    </div>
+
+                    <!-- فئة 3: الزهور -->
+                    <div class="winner-card card-flowers">
+                        <span class="category-tag">فئة الزهور</span>
+                        <div class="winner-avatar-box">
+                            <img src="winner1.jpg" alt="صورة الفائز" class="winner-img">
+                        </div>
+                        <div class="winner-details">
+                            <h3>البطلة / شــادن بنت سعـود </h3>
+                            <p class="achievement-text">قادت مبادرة تحدي 'فرز وإعادة تدوير الألعاب' بنجاح.</p>
+                        </div>
+                    </div>
+
+                    <!-- فئة 4: الرواد -->
+                    <div class="winner-card card-rowad">
+                        <span class="category-tag">فئة الرواد</span>
+                        <div class="winner-avatar-box">
+                            <img src="eid.jpg" alt="صورة الفائز" class="winner-img">
+                        </div>
+                        <div class="winner-details">
+                            <h3>البطل / عيــد بن فهــد </h3>
+                            <p class="achievement-text">تميز في الالتزام اليومي والانضباط بجميع تحديات البرنامج.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+<!-- قسم قنديل في أرقام (الأرقام الجديدة) -->
+<section id="stats" class="stats-section">
+    <div class="container">
+        <div class="section-title">
+            <h2><i class="fa-solid fa-chart-line"></i> قنديل في أرقام</h2>
+            <p>حصاد جهود أبطالنا وبطلاتنا الصغار منذ انطلاق البرنامج الصيفي</p>
+        </div>
+        <div class="stats-grid">
+            <!-- كرت رقم 1: المشتركين -->
+            <div class="stat-item">
+                <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                <!-- هنا غيرنا الهدف إلى 500 وأضفنا كلمة "أكثر من" بجانب الرقم -->
+                <h3>أكثر من <span class="counter" data-target="500">0</span></h3>
+                <p>مشترك متميز</p>
+            </div>
+            <!-- كرت رقم 2: السور المحفوظة -->
+            <div class="stat-item">
+                <div class="stat-icon"><i class="fa-solid fa-book-quran"></i></div>
+                <!-- هنا غيرنا الهدف إلى 150 -->
+                <h3>أكثر من <span class="counter" data-target="150">0</span></h3>
+                <p>سورة محفوظة</p>
+            </div>
+            <!-- كرت رقم 3: المبادرات الاجتماعية -->
+            <div class="stat-item">
+                <div class="stat-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                <!-- هنا غيرنا الهدف إلى 50 -->
+                <h3>أكثر من <span class="counter" data-target="50">0</span></h3>
+                <p>مبادرة اجتماعية</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- قسم انضم إلينا والتواصل -->
+<section id="connect" class="connect-section">
+    <div class="container connect-grid">
+
+        <!-- بطاقة انضم إلينا -->
+        <div class="connect-card join-box">
+            <h3><i class="fa-solid fa-user-plus"></i> انضم إلينا</h3>
+            <p>كن جزءاً من مسيرة قنديل التربوية! نرحب بالأطفال والكبار في مسابقاتنا الرمضانية ومصيافنا الصيفي الممتع.</p>
+            <a href="https://chat.whatsapp.com/KPNoigsbJTEI9pqOmeyUr5?mode=gi_t" target="_blank" class="btn-connect">سجل معنا الآن</a>
+        </div>
+
+        <!-- بطاقة تواصل معنا -->
+        <div class="connect-card contact-box">
+            <h3><i class="fa-solid fa-comments"></i> تواصل معنا</h3>
+            <p>لديك استفسار أو اقتراح؟ يسعدنا تواصلك الدائم معنا عبر القنوات الرسمية لمبادرة قنديل:</p>
+            <div class="contact-links">
+                <a href="https://wa.me/966579517751" target="_blank" class="contact-item">
+                    <i class="fa-brands fa-whatsapp"></i> واتساب المبادرة
+                </a>
+                <a href="mailto:info@qandeel.com" class="contact-item">
+                    <i class="fa-solid fa-envelope"></i> البريد الإلكتروني
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- قسم من نحن المطور (نص يمين وصورة يسار) -->
+<section id="about" class="about-section">
+    <div class="container about-grid">
+
+        <!-- الجزء الأيمن: النص والعنوان -->
+        <div class="about-text">
+            <h2>من نحن (مبادرة قنديل)</h2>
+            <p>
+                نحن مبادرة تربوية قيمية متكاملة تستهدف الأطفال والكبار لتنمية مهاراتهم الإيمانية والمجتمعية، وبناء جسور المعرفة والمسؤولية بين كبارنا وأحفادنا الواعدين ليعتز الجميع بهويتهم الإسلامية بروح معاصرة ممتعة.
+                تتميز مبادرتنا بالعطاء الممتد طوال العام عبر برامج موسمية مبتكرة؛ حيث نلتقي بأبطالنا في <strong>"المسابقات الرمضانية"</strong> الإيمانية، ونستمر معهم في <strong>"مصياف قنديل"</strong> خلال فصل الصيف، ليرتبط الحفظ المتين للقرآن الكريم والسنة النبوية بالمبادرات الأخلاقية والتحديات التنافسية المبتكرة.
+            </p>
+        </div>
+
+        <!-- الجزء الأيسر: الحاوية وبداخلها الصورة -->
+        <div class="about-gallery-single">
+            <img src="صورةجماعية.png" alt="لقطات من فعاليات ومسابقات مبادرة قنديل" class="combined-gallery-img">
+        </div>
+
+    </div>
+</section>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 جميع الحقوق محفوظة لبرنامج قنديل.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
